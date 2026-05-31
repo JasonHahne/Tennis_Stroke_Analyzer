@@ -2,14 +2,6 @@
 
 The Tennis Stroke Analyzer is a computer vision application built to help players evaluate and improve their technique. By utilizing deep learning models, the software tracks human pose landmarks and tennis rackets from video recordings, extracting 3D joint angles to deliver a side-by-side comparative analysis against reference data compiled from professional players.
 
-## Key Features
-
-- **Biomechanical Tracking:** Leverages MediaPipe to capture precise 3D body coordinates independent of camera distance.
-- **Equipment Detection:** Integrates YOLOv8 object detection to track the path, center, and angle of the tennis racket throughout the movement.
-- **Automated Stroke Identification:** Supports data collection and profile generation for major strokes: Forehands, Backhands, and Serves.
-- **Sequence Alignment:** Utilizes Dynamic Time Warping (DTW) to dynamically map user movements to professional templates, correcting for differences in timing and speed.
-- **Graphical User Interface:** Built with PyQt5, featuring live overlay visualizers, interactive charts, and structured feedback panels.
-
 ## Visual Demonstrations
 
 ### 1. 2D Pose and Racket Tracking View
@@ -29,6 +21,14 @@ This panel maps out the normalized 3D coordinate system, isolating human joint p
 This visualization plots the exact path, velocity metrics, and launch angles calculated from the sequence data.
 
 ![Ball Trajectory Plot Demonstration](images/balltrajectory.gif)
+
+## Key Features
+
+- **Biomechanical Tracking:** Leverages MediaPipe to capture precise 3D body coordinates independent of camera distance.
+- **Equipment Detection:** Integrates YOLOv8 object detection to track the path, center, and angle of the tennis racket throughout the movement.
+- **Automated Stroke Identification:** Supports data collection and profile generation for major strokes: Forehands, Backhands, and Serves.
+- **Sequence Alignment:** Utilizes Dynamic Time Warping (DTW) to dynamically map user movements to professional templates, correcting for differences in timing and speed.
+- **Graphical User Interface:** Built with PyQt5, featuring live overlay visualizers, interactive charts, and structured feedback panels.
 
 ## Project Structure
 
